@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Radio Hyrule Unofficial</string>
+    <string name="url">http://listen.radiohyrule.com:8000/listen</string>
+    <string name="site">http://www.radiohyrule.com/</string>
+    <string name="PrefsFile">Preferences</string>
+    <string name="urllow">http://listen.radiohyrule.com:8000/listen-lo</string>
+
+</resources>

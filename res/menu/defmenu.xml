@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/quality"
+        android:title="Change to low quality">
+    </item>
+    
+   <item
+        android:id="@+id/notification"
+        android:title="Toggle notification On">
+    </item>
+    
+   <item
+        android:id="@+id/saved"
+        android:title="Saved Favorites">
+    </item>
+
+</menu>

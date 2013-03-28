@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/landscapte_texture"
+    android:orientation="horizontal"
+    android:weightSum="300" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="75" >
+
+        <ImageView
+            android:id="@+id/albumart"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+  		 	android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/def" >
+
+        </ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="95">
+
+        <TextView
+            android:id="@+id/song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_above="@id/artist"
+            android:text="Song: "
+            android:textAppearance="@style/BigText" />
+
+        <TextView
+            android:id="@+id/artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_alignParentLeft="true"
+            android:text="Artist: "
+            android:textAppearance="@style/BigText" />
+        <TextView
+            android:id="@+id/album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_below="@id/artist"
+            android:text="Album: "
+            android:textAppearance="@style/BigText" />
+       
+    </RelativeLayout>
+    
+<RelativeLayout 
+    android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="130">
+        
+         <ImageButton
+             android:id="@+id/playpausebutton"
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:layout_centerInParent="true"
+             android:background="@android:color/transparent"
+             android:scaleType="centerInside"
+             android:src="@drawable/r1" />
+         
+         <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Play"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/playpausebutton"
+        android:textColor="#000000" />
+         
+    
+
+    <ImageButton
+        android:id="@+id/songsave"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+		android:layout_centerHorizontal="true"
+		android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/close" 
+        android:layout_marginBottom="10dp"/>
+    
+</RelativeLayout>
+    </LinearLayout>

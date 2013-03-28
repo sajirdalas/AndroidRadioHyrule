@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sajir.zradio"
+    android:versionCode="6"
+    android:versionName="0.8.0.2" >
+
+    <uses-sdk android:minSdkVersion="7" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+      
+
+    
+
+    <application
+        android:icon="@drawable/ocarina"
+        android:label="@string/app_name" >
+        <activity
+            android:name="sajir.zradioa.ZeldaRadioAlphaActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name" 
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="sajir.zradioa.songlist"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.NoTitleBar">
+ 
+        </activity>
+
+        <service
+            android:name="sajir.zradioa.RadioService"
+            android:enabled="true" />
+    </application>
+
+</manifest>
