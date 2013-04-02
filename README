@@ -1,0 +1,3 @@
+Code for Android App meant as a one-button listener for the http://radiohyrule.com/ with tags and albumart extracted from the page source using Jsoup.
+
+The program is meant for android versions under 2.3 and currently shows unpredictable bugs in several phones.
